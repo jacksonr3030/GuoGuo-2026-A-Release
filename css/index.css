@@ -1,0 +1,140 @@
+html {
+  font-size: 50px;
+}
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+a {
+  text-decoration: none;
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background: gainsboro;
+}
+.top-bar {
+  width: 15rem;
+  height: 1.76rem;
+  background-color: #ffc001;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.top-bar .classify {
+  width: 0.88rem;
+  height: 1.4rem;
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+  background-image: url(../imgs/menu-icon.png);
+  background-size: 0.88rem 1.4rem;
+}
+.top-bar .search {
+  flex: 1;
+}
+.top-bar .search input {
+  height: 1.32rem;
+  border-radius: 0.66rem;
+  border: 0;
+  margin-top: 0.24rem;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 0.5rem;
+  padding: 0 1.1rem;
+  color: #757575;
+}
+.top-bar .login {
+  width: 1.5rem;
+  height: 1.4rem;
+  margin: 0.2rem;
+  color: white;
+  font-size: 0.5rem;
+  text-align: center;
+  line-height: 1.4rem;
+}
+.banner {
+  width: 15rem;
+  height: 7.76rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.ad {
+  display: flex;
+}
+.ad a {
+  flex: 1;
+  height: 4rem;
+}
+.ad a img {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  width: 15rem;
+  background-color: white;
+  padding-top: 0.4rem;
+  overflow: hidden;
+}
+nav a {
+  float: left;
+  width: 3rem;
+  height: 2.8rem;
+  text-align: center;
+  position: relative;
+}
+nav a img {
+  width: 1.64rem;
+  height: 1.64rem;
+  margin: 0.2px auto 0;
+  display: block;
+}
+nav a span {
+  font-size: 0.5rem;
+  color: #333333;
+  position: absolute;
+  left: 0;
+  right: 0;
+}

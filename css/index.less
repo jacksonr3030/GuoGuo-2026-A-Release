@@ -1,0 +1,122 @@
+// 导入common.less文件
+@import "common";
+@baseFont: 50px;
+
+body{
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: gainsboro;
+}
+
+.top-bar{
+    width: 15rem;
+    //从页面中获得该元素高度应为88px，而我们自己定位的1rem=50px
+    height: 88rem / @baseFont;
+    background-color: #ffc001;
+
+    //固定定位
+    position: fixed;
+    top: 0;
+    //向右移动父元素50%，左侧居中-->再向左移动自身的50%，则中心居中
+    left: 50%;
+    transform: translateX(-50%);
+
+    //开启flex弹性盒布局
+    display: flex;
+
+    .classify{
+        width: 44rem / @baseFont;
+        height: 70rem / @baseFont;
+        margin: 11rem / @baseFont 25rem / @baseFont 7rem / @baseFont 24rem / @baseFont;
+        background-image: url(../imgs/menu-icon.png);
+        background-size: 44rem / @baseFont 70rem / @baseFont;
+    }
+
+    .search{
+        // 自适应宽度和高度
+        flex: 1;
+        input{
+            height: 66rem / @baseFont;
+            border-radius: 33rem / @baseFont;
+            border: 0;
+            margin-top: 12rem / @baseFont;
+            width: 100%;
+
+            //这里要把大小设置为外边框，否则由于设置了padding，会造成元素溢出
+            box-sizing: border-box;
+            //去除元素被选中状态下外部出现的虚线
+            outline: none;
+
+            //文本框字体
+            font-size: 25rem / @baseFont;
+            padding:0 55rem / @baseFont;
+            color: #757575;
+        }
+    }
+
+    .login{
+        width: 75rem / @baseFont;
+        height: 70rem / @baseFont;
+        margin: 10rem / @baseFont;
+        color: white;
+        font-size: 25rem / @baseFont;
+        text-align: center;
+        line-height: 70rem / @baseFont;
+    }
+
+}
+
+.banner{
+        width: 750rem / @baseFont;
+        height: 388rem / @baseFont;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+}
+
+.ad{
+    display: flex;
+    a{
+        flex: 1;
+        height: 200rem / @baseFont;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+nav{
+    width: 750rem / @baseFont;
+    background-color: white;
+    padding-top: 20rem / @baseFont;
+    //防止高度塌陷
+    overflow: hidden;
+    a{
+        float: left;
+        width: 150rem / @baseFont;
+        height: 140rem / @baseFont;
+        text-align: center;
+        position: relative;
+        img{
+            width: 82rem / @baseFont;
+            height: 82rem / @baseFont;
+            // 上面是10px，左右是auto，下面是0
+            margin: 10px / @baseFont auto 0;
+            display: block;
+        }
+        span{
+            font-size: 25rem / @baseFont;
+            color: #333333;
+            position: absolute;
+            // line-height: 25rem / @baseFont;
+            // margin-bottom: 50rem / @baseFont;
+            left: 0;
+            right: 0;
+        }
+    }
+}

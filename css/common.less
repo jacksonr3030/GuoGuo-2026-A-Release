@@ -1,0 +1,67 @@
+// 设置常见的屏幕尺寸，修改里面的html文字大小。
+
+// 定义划分的份数为15
+@number: 15;
+
+// 如果用pc端打开，直接使用固定像素(写在最上面，否则会覆盖下面写的)
+html{
+    font-size: 50px;
+}
+
+@media screen and (max-width:720px){
+    html{
+        font-size: 720px / @number;
+    }
+}
+
+@media screen and (max-width:540px){
+    html{
+        font-size: 540px / @number;
+    }
+}
+
+@media screen and (max-width:480px){
+    html{
+        font-size: 480px / @number;
+    }
+}
+
+@media screen and (max-width:424px){
+    html{
+        font-size: 424px / @number;
+    }
+}
+
+@media screen and (max-width:400px){
+    html{
+        font-size: 400px / @number;
+    }
+}
+
+@media screen and (max-width:375px){
+    html{
+        font-size: 375px / @number;
+    }
+}
+
+@media screen and (max-width:360px){
+    html{
+        font-size: 360px / @number;
+    }
+}
+
+@media screen and (max-width:320px){
+    html{
+        font-size: 320px / @number;
+    }
+}
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+}
